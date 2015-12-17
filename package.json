@@ -1,0 +1,26 @@
+{
+  "main": "app.js",
+  "name": "newsletter",
+  "description": "A very simple newsletter application using NodeJS, ExpressJS, MongoDB and AngularJS.",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "lodash.template": "^3.6.2",
+    "mandrill-api": "^1.0.45",
+    "async": "^1.5.0",
+    "mongoose": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "angularjs",
+    "mongodb",
+    "expressjs"
+  ],
+  "author": "Pete Houston <contact@petehouston.com>",
+  "license": "MIT"
+}

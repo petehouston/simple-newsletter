@@ -1,0 +1,18 @@
+{
+    "mandrill": {
+        "user": "{YOUR MANDRILL USERNAME}",
+        "api_key": "{SECRET KEY}"
+    },
+    "email": {
+        "template": {
+            "subject": "Thanks for your newsletter subscription",
+            "from_email": "{YOUR EMAIL}",
+            "from_name": "{NAME}"
+        }
+    },
+    "database": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "db": "newsletter"
+    }
+}

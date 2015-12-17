@@ -1,0 +1,25 @@
+<div class="container">
+    <form name="userForm" ng-submit="indexVm.send(userForm.$valid)"  ng-show="!indexVm.isSentSuccessful" novalidate>
+        <div class="input-group">
+            <label for="name">Username*:</label>
+            <input type="text" name="name" ng-model="indexVm.user.name" class="input-control" required="required">
+            <p class="input-error" ng-show="userForm.name.$invalid && !userForm.name.$pristine">Name is required</p>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email*:</label>
+            <input type="email" name="email" ng-model="indexVm.user.email" class="input-control" required="required">
+            <p class="input-error" ng-show="userForm.email.$invalid && !userForm.email.$pristine">This field is required</p>
+
+        </div>
+
+        <div class="input-group align-right">
+            <button class="btn-submit" ng-disabled="userForm.$invalid">Send</button>
+        </div>
+    </form>
+
+    <div class="box" ng-show="indexVm.isSentSuccessful">
+        <p class="headline">Stay tune {{indexVm.user.name}}.</p>
+        <p class="subheadline">You have been signed up!</p>
+    </div>
+</div>
