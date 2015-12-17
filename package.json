@@ -11,7 +11,12 @@
     "async": "^1.5.0",
     "mongoose": "^4.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
