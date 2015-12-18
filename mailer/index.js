@@ -9,7 +9,7 @@ var mailer = {};
 
 mailer.send = function (user, cb) {
     var message = {
-        "html": template(fs.readFileSync(path.join(__dirname, '..', 'templates', 'email.tpl')))({
+        "html": template(fs.readFileSync(path.join(__dirname, '..', 'templates', 'test-template')))({
             name: user.name,
             email: user.email}),
         "subject": config.email.template.subject,
